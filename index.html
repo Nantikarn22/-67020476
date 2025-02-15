@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>ร้านอาหาร อัลไล</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&family=Pacifico&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Navbar & Hero Start -->
+        <div class="container-xxl position-relative p-0">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0">
+                <a href="" class="navbar-brand p-0">
+                    <h1 class="text-primary m-0"><i class="fa fa-utensils me-3"></i>ครัวอัลไล</h1>
+                    <!-- <img src="img/logo.png" alt="Logo"> -->
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0 pe-4">
+                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="service.html" class="nav-item nav-link">Service</a>
+                        <a href="menu.html" class="nav-item nav-link">Menu</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                            <div class="dropdown-menu m-0">
+                                <a href="booking.html" class="dropdown-item">Booking</a>
+                                <a href="team.html" class="dropdown-item">Our Team</a>
+                                <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                            </div>
+                        </div>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    </div>
+                    <a href="" class="btn btn-primary py-2 px-4">Book A Table</a>
+                </div>
+            </nav>
+
+            <div class="container-xxl py-5 bg-dark hero-header mb-5">
+                <div class="container my-5 py-5">
+                    <div class="row align-items-center g-5">
+                        <div class="col-lg-6 text-center text-lg-start">
+                            <h1 class="display-3 text-white animated slideInLeft">รับรองความอร่อย<br>กินง่าย ถ่ายไว</h1>
+                            <p class="text-white animated slideInLeft mb-4 pb-2">คิดแคปชั่นไม่ออก แต่คิดถึงคุณลูกค้าตลอดเลยนะ  สวัสดีทุกคนค่ะ! ล่าสุดร้านครัวอัลไล พร้อมเสิร์ฟความอร่อยยังคงหิวอยู่หรือใครที่เบื่อๆอยากให้เปลี่ยนบรรยากาศมาทานอาหารดีๆอร่อยๆแนะนำให้มาที่ร้านเลยค่ะ! รับรองว่าไม่ผิดหวังอยากให้ทุกคนมาสนุกกันที่ร้านของเรามาแล้วจะได้เพื่อนใหม่ๆ อร่อยๆ และไม่ต้องไปหาที่ไหนไกล! ร้านเรารับจบ </p>
+                            <a href="" class="btn btn-primary py-sm-3 px-sm-5 me-3 animated slideInLeft">Book A Table</a>
+                        </div>
+                        <div class="col-lg-6 text-center text-lg-end overflow-hidden">
+                            <img class="img-fluid" src="img/hero.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar & Hero End -->
+
+
+        <!-- Service Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="service-item rounded pt-3">
+                            <div class="p-4">
+                                <i class="fa fa-3x fa-user-tie text-primary mb-4"></i>
+                                <h5>Master Chefs</h5>
+                                <p>เชฟของทางร้านทักษะในการปรุงอาหารที่มีคุณภาพสูง การเลือกใช้วัตถุดิบที่ดี และการปรับเมนูให้ตรงกับความต้องการของลูกค้าการให้บริการจากเชฟช่วยสร้างความพิเศษให้กับการรับประทานอาหาร ลูกค้าจะได้รับประสบการณ์ที่ไม่เหมือนใคร และยังรู้สึกถึงความเอาใจใส่ในการบริการ</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="service-item rounded pt-3">
+                            <div class="p-4">
+                                <i class="fa fa-3x fa-utensils text-primary mb-4"></i>
+                                <h5>Quality Food</h5>
+                                <p>การบริการอาหารที่ดีไม่เพียงแต่การเสิร์ฟที่รวดเร็ว แต่ยังเกี่ยวข้องกับคุณภาพของอาหาร ความสะอาด ความพึงพอใจของลูกค้า และประสบการณ์โดยรวมของลูกค้าในร้านหรือในระหว่างการสั่งซื้ออาหาร</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="service-item rounded pt-3">
+                            <div class="p-4">
+                                <i class="fa fa-3x fa-cart-plus text-primary mb-4"></i>
+                                <h5>Online Order</h5>
+                                <p>การบริการสั่งอาหารออนไลน์ในปัจจุบันเป็นทางเลือกที่สะดวกและรวดเร็วสำหรับลูกค้าในยุคดิจิทัล การบริการนี้ไม่เพียงแต่ช่วยให้ลูกค้าสามารถสั่งอาหารจากร้านโปรดได้จากที่บ้านหรือที่ทำงาน แต่ยังช่วยให้ธุรกิจสามารถเข้าถึงลูกค้าได้มากขึ้นด้วย</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+                        <div class="service-item rounded pt-3">
+                            <div class="p-4">
+                                <i class="fa fa-3x fa-headset text-primary mb-4"></i>
+                                <h5>24/7 Service</h5>
+                                <p>การบริการตลอด 24 ชั่วโมงช่วยให้ลูกค้าได้รับความสะดวกและยืดหยุ่นในการใช้บริการ ซึ่งไม่ว่าจะเป็นการสั่งอาหาร, การจัดเลี้ยง, หรือบริการในโรงแรม การเปิดบริการตลอด 24 ชั่วโมงช่วยตอบสนองความต้องการของลูกค้าในทุกเวลา สร้างความพึงพอใจและเพิ่มความภักดีของลูกค้า</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Service End -->
+
+
+        <!-- About Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6">
+                        <div class="row g-3">
+                            <div class="col-6 text-start">
+                                <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.1s" src="img/ร้านอาหาร1.jpg">
+                            </div>
+                            <div class="col-6 text-start">
+                                <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.3s" src="img/ภาพร้าน1111.jpg" style="margin-top: 25%;">
+                            </div>
+                            <div class="col-6 text-end">
+                                        <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.5s" src="img/ร้านอาหารถ.jpg" >
+                            </div>
+                            <div class="col-6 text-end">
+                                <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.7s" src="img/ร้านอาหาร4.jpg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <h5 class="section-title ff-secondary text-start text-primary fw-normal">About Us</h5>
+                        <h1 class="mb-4">ยินดีต้อนรับ <i class="fa fa-utensils text-primary me-2"></i>ครัวอัลไล</h1>
+                        <p class="mb-4">ที่ร้านของเรามีบรรยากาศที่คุ้นเคยและเป็นกันเองเหมือนกับนั่งทานอาหารที่บ้านกับคนที่คุณรักทุกมุมของร้านสำรวจอย่างใส่ใจสร้างบรรยากาศที่สบายๆ พร้อมผ่อนคลายในบรรยากาศเสียงเพลงเบาๆที่ แทบจะไม่รู้สึกเหมือนอยู่ในโลกส่วนตัว </p>
+                        <p class="mb-4">บางครั้งมุมห้องแอร์เย็นๆ หรือโซนสวนจะมีต้นไม้เขียวขจีลงไปนั่งได้ตามอารมณ์เลยค่ะ และสำหรับการรับประทานอาหารนอกบ้านหรือคนรักที่ร้านของเราบอกว่าเป็นไรที่พิเศษ</p>
+                        <p class="mb-4">ที่สำคัญบริการที่ใส่ใจทุกๆครั้งต่อไปจะรู้สึกเหมือนอยู่บ้านอีกครั้งอาหารอร่อยทานไปพูดคุยอีกครั้งมาอีกครั้งหรือจะมาเยี่ยมเยียนฟีลดีๆทุกครั้งที่มา</p>
+                        <div class="row g-4 mb-4">
+                            <div class="col-sm-6">
+                                <div class="d-flex align-items-center border-start border-5 border-primary px-3">
+                                    <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">15</h1>
+                                    <div class="ps-4">
+                                        <p class="mb-0">Years of</p>
+                                        <h6 class="text-uppercase mb-0">Experience</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="d-flex align-items-center border-start border-5 border-primary px-3">
+                                    <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">50</h1>
+                                    <div class="ps-4">
+                                        <p class="mb-0">Popular</p>
+                                        <h6 class="text-uppercase mb-0">Master Chefs</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="btn btn-primary py-3 px-5 mt-2" href="">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+
+
+        <!-- Menu Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h5 class="section-title ff-secondary text-center text-primary fw-normal">Food Menu</h5>
+                    <h1 class="mb-5">เมนู เสี่ยง ชีวิต</h1>
+                </div>
+                <div class="tab-class text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <ul class="nav nav-pills d-inline-flex justify-content-center border-bottom mb-5">
+                        <li class="nav-item">
+                            <a class="d-flex align-items-center text-start mx-3 ms-0 pb-3 active" data-bs-toggle="pill" href="#tab-1">
+                                <i class="fa fa-coffee fa-2x text-primary"></i>
+                                <div class="ps-3">
+                                    <small class="text-body">เมนู</small>
+                                    <h6 class="mt-n1 mb-0">อาหารเช้า</h6>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="d-flex align-items-center text-start mx-3 pb-3" data-bs-toggle="pill" href="#tab-2">
+                                <i class="fa fa-hamburger fa-2x text-primary"></i>
+                                <div class="ps-3">
+                                    <small class="text-body">เมนู</small>
+                                    <h6 class="mt-n1 mb-0">อาหารกลางวัน</h6>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="d-flex align-items-center text-start mx-3 me-0 pb-3" data-bs-toggle="pill" href="#tab-3">
+                                <i class="fa fa-utensils fa-2x text-primary"></i>
+                                <div class="ps-3">
+                                    <small class="text-body">เมนู</small>
+                                    <h6 class="mt-n1 mb-0">อาหารเย็น</h6>
+                                </div>
+                            </a>
+                        </li>
+                    </li>
+                    </li>
+
+                    </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div id="tab-1" class="tab-pane fade show p-0 active">
+                            <div class="row g-4">
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/77777777.png" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>ออต ลุยอา</span>
+                                                <span class="text-primary">$200</span>
+                                            </h5>
+                                            <small class="fst-italic">ร้านนึ้ขายถูก คนท้องผูกต้องรีบมาลอง</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/88888888888.png" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>เอสต์ เอลิเจนดี</span>
+                                                <span class="text-primary">$150</span>
+                                            </h5>
+                                            <small class="fst-italic">คนกินตาย คนคายรอด</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/9999999.png" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>ห้องปฏิบัติการ Direva</span>
+                                                <span class="text-primary">$250</span>
+                                            </h5>
+                                            <small class="fst-italic">กินแล้วต้องซื้อซ้ำ เพราะร้านทำมาน้อย </small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/11111111111.png" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>เอสต์ เอลิเจนดี</span>
+                                                <span class="text-primary">$399</span>
+                                            </h5>
+                                            <small class="fst-italic">สูตรนี้แหละตำนาน ลูกค้านั่งตั้งแต่เมื่อวาน ยังไม่ได้ทานสักคน </small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/121.png" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>อีออส ลูอิบัสดัม</span>
+                                                <span class="text-primary">$100</span>
+                                            </h5>
+                                            <small class="fst-italic">คนกินตาย คนคายรอด</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/2212.png" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>มักนัม ติสเต้</span>
+                                                <span class="text-primary">$299</span>
+                                            </h5>
+                                            <small class="fst-italic">อร่อยครบรส เพราะชูรสครึ่งซอง</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/เช่าาาาาาาาาาาาาาาา.png" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Breakfast</span>
+                                                <span class="text-primary">$115</span>
+                                            </h5>
+                                            <small class="fst-italic">อร่อยนัว ไม่ต้องกลัวผมร่วง </small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/ต้มยำ.png" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>ต้มยำข่าไก่</span>
+                                                <span class="text-primary">$120</span>
+                                            </h5>
+                                            <small class="fst-italic">ที่ชอบเรียกมาซื้อ ก็เพราะอยากยื้อเธอไว้นานๆ</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-2" class="tab-pane fade show p-0">
+                            <div class="row g-4">
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/8989898.png" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>ต้มยำกุ้ง</span>
+                                                <span class="text-primary">$299</span>
+                                            </h5>
+                                            <small class="fst-italic">กินชาตินี้ ย่อยอีกทีชาติหน้า</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/จจจจ.jpg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>แกงเขียวหวานไก่</span>
+                                                <span class="text-primary">$109</span>
+                                            </h5>
+                                            <small class="fst-italic">บอกสูตรชาววัง...วังหลังไม่กินแล้วว</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/ไก่.png" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>ไก่ผัดซอสสามรส</span>
+                                                <span class="text-primary">$105</span>
+                                            </h5>
+                                            <small class="fst-italic">อร่อยเกินคาด อัมพาตครึ่งตัว</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/ส้มตำ.png" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>ส้มตำตำไทย</span>
+                                                <span class="text-primary">$105</span>
+                                            </h5>
+                                            <small class="fst-italic">เค็มถึงใจ ไตถึงพัง</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/ธารทะเล.png" alt="" style="width: 95px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>ธารทะเลซีฟู๊ด</span>
+                                                <span class="text-primary">399</span>
+                                            </h5>
+                                            <small class="fst-italic">พียงแค่แวะมาเข้าชม เราก็แอบนิยมคุณอยู่ในใจ</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/oooo.webp" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>ผัดไทในกรีบบัว</span>
+                                                <span class="text-primary">$115</span>
+                                            </h5>
+                                            <small class="fst-italic">ร้านนี้อร่อย กินบ่อยๆ เป็นเบาหวาน</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/21212112121212121.png" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>-ข้าวผัดกุ้ง</span>
+                                                <span class="text-primary">$135</span>
+                                            </h5>
+                                            <small class="fst-italic">เด็กกินได้ ผู้ใหญ่​กินดี คิดอีกทีไม่กินดีกว่า</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/ลาบ.jpg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>ลาบเนื้อ ลาบใจ</span>
+                                                <span class="text-primary">$115</span>
+                                            </h5>
+                                            <small class="fst-italic">สะอาด ปลอดภัย น่าไว้ใจ ไม่ใช่ร้านนี้</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-3" class="tab-pane fade show p-0">
+                            <div class="row g-4">
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/สเต็ก.png" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>สเต็กเนื้อปลาแสนอร่อย</span>
+                                                <span class="text-primary">$500</span>
+                                            </h5>
+                                            <small class="fst-italic">จะกลืนหรือคาย ก็เป็นตายเท่ากัน</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/แซลมอล.png" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>สเต็กเเซลม่อน</span>
+                                                <span class="text-primary">$399</span>
+                                            </h5>
+                                            <small class="fst-italic">อร่อยจริง ถึงกับทิ้งพินัยกรรม</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/gggg.png" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>สปาเก็ตตี้</span>
+                                                <span class="text-primary">$350</span>
+                                            </h5>
+                                            <small class="fst-italic">อร่อยไม่ซ้ำ จำสูตรไม่ได้</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/eeee.jpg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>บันดาบัน(อาหารเวียดนาม)</span>
+                                                <span class="text-primary">$200</span>
+                                            </h5>
+                                            <small class="fst-italic">บริการดุจญาติมิตร ทุกชีวิตแล้วแต่ดวง</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/ฟฟฟฟฟฟ.png" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>อาหารจานด่วน</span>
+                                                <span class="text-primary">$115</span>
+                                            </h5>
+                                            <small class="fst-italic">ด่วนแต่จาน อาหารยังไม่มา</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/ไไไไ.jpg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>มาซ่าร่าเนื้อ</span>
+                                                <span class="text-primary">$430</span>
+                                            </h5>
+                                            <small class="fst-italic">ซื้อเป็นร้อย ก็ยังน้อยอยู่</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/ไก่ง่วง.png!w700wp" alt="" style="width: 85px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>ไก่ย่าง</span>
+                                                <span class="text-primary">$1999</span>
+                                            </h5>
+                                            <small class="fst-italic">อร่อยถูกใจ ประกันภัยไม่รับเคลม</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/แกงปู.png" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>แกงปู</span>
+                                                <span class="text-primary">$450</span>
+                                            </h5>
+                                            <small class="fst-italic">รสชาติไม่ต้องพูดถึง รถปอเต็กตึ๊งมารอแล้ว </small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!-- Menu End -->
+        <!-- Reservation Start -->
+        <div class="container-xxl py-5 px-0 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="row g-0">
+                <div class="col-md-6">
+                    <div class="video">
+                        <button type="button" class="btn-play" data-bs-toggle="modal" data-src="img/คลิป.htm" data-bs-target="#videoModal">
+                            <span></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-6 bg-dark d-flex align-items-center">
+                    <div class="p-5 wow fadeInUp" data-wow-delay="0.2s">
+                        <h5 class="section-title ff-secondary text-start text-primary fw-normal">Reservation</h5>
+                        <h1 class="text-white mb-4">Book A Table Online</h1>
+                        <form>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                        <label for="name">Your Name</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control" id="email" placeholder="Your Email">
+                                        <label for="email">Your Email</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating date" id="date3" data-target-input="nearest">
+                                        <input type="text" class="form-control datetimepicker-input" id="datetime" placeholder="Date & Time" data-target="#date3" data-toggle="datetimepicker" />
+                                        <label for="datetime">Date & Time</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <select class="form-select" id="select1">
+                                          <option value="1">People 1</option>
+                                          <option value="2">People 2</option>
+                                          <option value="3">People 3</option>
+                                          
+                                        </select>
+                                        <label for="select1">No Of People</label>
+                                      </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <textarea class="form-control" placeholder="Special Request" id="message" style="height: 100px"></textarea>
+                                        <label for="message">Special Request</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-primary w-100 py-3" type="submit">Book Now</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content rounded-0">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Youtube Video</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- 16:9 aspect ratio -->
+                        <div class="ratio ratio-16x9">
+                            <iframe class="embed-responsive-item" src="" id="video" allowfullscreen allowscriptaccess="always"
+                                allow="autoplay"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Reservation Start -->
+
+
+        <!-- Team Start -->
+        <div class="container-xxl pt-5 pb-3">
+            <div class="container">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h5 class="section-title ff-secondary text-center text-primary fw-normal">Team Members</h5>
+                    <h1 class="mb-5">หัวหน้าเชฟ</h1>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="team-item text-center rounded overflow-hidden">
+                            <div class="rounded-circle overflow-hidden m-4">
+                                <img class="img-fluid" src="img/team-19.jpg" alt="" width="500" height="900">
+                            </div>
+                            <h5 class="mb-0">CHFE </h5>
+                            <small>ธิติฏฐ์ ทัศนาขจร</small>
+                            <body>
+                                <h1></h1>
+                                <a href="https://readthecloud.co/chefton-thitid-tassanakajohn/" target="_blank">คลิกดูประวัติ</a>    
+                           </body>
+
+                            <div class="d-flex justify-content-center mt-3">
+                                <a href="https://www.facebook.com/p/cheftonn-100063680163252/"><img src="img/เฟสสสส.webp" alt="ธิติฏฐ์ ทัศนาขจร" style="width:42px;height:42px;"></a>
+                                <a href="https://www.instagram.com/cheftonn/"><img src= "img/ไอจี.png" alt="ธิติฏฐ์ ทัศนาขจร" style="width:42px;height:42px;"></a>
+                                <a href="https://x.com/bongtao/status/1263343390663442432"><img src="img/ทวิดดดดด.png" alt="ธิติฏฐ์ ทัศนาขจร" style="width:42px;height:42px;"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="team-item text-center rounded overflow-hidden">
+                            <div class="rounded-circle overflow-hidden m-4">
+                                <img class="img-fluid" src="img/team-21.jpg " alt=""  width="500" height="333">
+                            </div>
+                            <h5 class="mb-0">CHFE</h5>
+                            <small>ปวีณ์นุช ยอดปรีชาวิจิตร</small>
+                            <body>
+                                <h1></h1>
+                                <a href="https://www.jeab.com/life/interview/chef-kaew-paweenuch/" target="_blank">คลิกดูประวัติ</a>    
+                           </body>
+                       
+                            <div class="d-flex justify-content-center mt-3">
+                                
+                                <a href="https://www.facebook.com/KAEWPaweenuch/?locale=th_TH"><img src="img/เฟสสสส.webp" alt="ปวีณ์นุช ยอดปรีชาวิจิตร" style="width:42px;height:42px;"></a>
+                                <a href="https://www.instagram.com/kaewpaweenuch/"><img src= "img/ไอจี.png" alt="ปวีณ์นุช ยอดปรีชาวิจิตร" style="width:42px;height:42px;"></a>
+                                <a href="https://x.com/ironchefthai/status/1302564989106925570"><img src="img/ทวิดดดดด.png" alt="ปวีณ์นุช ยอดปรีชาวิจิตร" style="width:42px;height:42px;"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="team-item text-center rounded overflow-hidden">
+                            <div class="rounded-circle overflow-hidden m-5">
+                                <img class="img-fluid" src="img/team-68.jpg " alt="" width="500" height="33">
+                                
+                            </div>
+                            <h5 class="mb-0">CHEF </h5>
+                            <small>ธรรมศักดิ์ ชูทอง </small>
+                            <body>
+                                <h1></h1>
+                                <a href="https://guide.michelin.com/th/th/article/dining-out/how-thai-cuisine-gets-an-update-at-suay-cherngtalay" target="_blank">คลิกดูประวัติ</a>    
+                           </body>
+                           
+                            <div class="d-flex justify-content-center mt-3">
+                                <a href="https://www.facebook.com/photo.php?fbid=880025368707032&id=299656143410627&set=a.880217622021140&locale=th_TH"><img src="img/เฟสสสส.webp" alt="ธรรมศักดิ์ ชูทอง" style="width:42px;height:42px;"></a>
+                                <a href="https://www.instagram.com/suay_cherngtalay/p/C13efDYLSCG/"><img src= "img/ไอจี.png" alt="ธรรมศักดิ์ ชูทอง" style="width:42px;height:42px;"></a>
+                                <a href="https://www.hungryhub.com/en/bloggers/kindee-by-praew/reviews/suay-x-chalong-bay.html"><img src="img/ทวิดดดดด.png" alt="ธรรมศักดิ์ ชูทอง" style="width:42px;height:42px;"></a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                        <div class="team-item text-center rounded overflow-hidden">
+                            <div class="rounded-circle overflow-hidden m-4">
+                                <img class="img-fluid" src="img/team-48.jpg " alt=""width="500" height="333">
+                            </div>
+                            <h5 class="mb-0">CHEF</h5>
+                            <small>ยังเอกสกุล (แอนดี้ หยาง)</small>
+                            <body>
+                                <h1></h1>
+                                <a href="https://thestandard.co/andy-yang/" target="_blank">คลิกดูประวัติ</a>    
+                           </body>
+                            <div class="d-flex justify-content-center mt-3">
+                                <a href="https://www.facebook.com/chefandyyang/"><img src="img/เฟสสสส.webp" alt="ยังเอกสกุล (แอนดี้ หยาง)" style="width:42px;height:42px;"></a>
+                                <a href="https://www.instagram.com/chefandyyang/"><img src= "img/ไอจี.png" alt="ยังเอกสกุล (แอนดี้ หยาง)" style="width:42px;height:42px;"></a>
+                                <a href="https://x.com/andydarcher"><img src="img/ทวิดดดดด.png" alt="ยังเอกสกุล (แอนดี้ หยาง)" style="width:42px;height:42px;"></a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Team End -->
+
+
+        <!-- Testimonial Start -->
+        <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="container">
+                <div class="text-center">
+                    <h5 class="section-title ff-secondary text-center text-primary fw-normal">Testimonial</h5>
+                    <h1 class="mb-5">รีวิว ความอร่อย จนคุณต้องกลับมาลอง</h1>
+                </div>
+                <div class="owl-carousel testimonial-carousel">
+                    <div class="testimonial-item bg-transparent border rounded p-4">
+                        <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                        <p>ครั้งแรกที่ได้มาที่ร้าน ต้องบอกเลยว่าฉันตื่นเต้นมาก เพราะเห็นรีวิวดีๆ มาเยอะมาก บรรยากาศในร้านอบอุ่นดีมากเลย มีทั้งมุมในร้านและด้านนอกให้เลือกนั่ง ส่วนตัวชอบนั่งข้างนอก เพราะมีลมเย็นๆ ช่วยให้รู้สึกผ่อนคลายดีค่ะ อาหารอร่อยมากๆๆ</p>
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-1.jpg" style="width: 50px; height: 50px;">
+                            <div class="ps-3">
+                                <h5 class="mb-1">ป๊อกกี้</h5>
+                                <small>ปิติ ชัดเจน</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-transparent border rounded p-4">
+                        <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                        <p>หลังจากที่ได้มาลองทานที่ร้านนี้ บอกตรงๆ ว่าประทับใจมาก คิดว่าต้องกลับมาอีกแน่นอน! ถ้าใครชอบอาหารไทยรสจัดๆ และอยากได้บรรยากาศดีๆ มาที่ร้านนี้ไม่ผิดหวังครับ </p>
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-5.jpg" style="width: 50px; height: 50px;">
+                            <div class="ps-3">
+                                <h5 class="mb-1">มินนี่</h5>
+                                <small>จุฑามาศ ขำขัน</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-transparent border rounded p-4">
+                        <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                        <p>รสชาติ: อาหารทุกจานอร่อยมากจริงๆ รสชาติครบเครื่องในทุกเมนู แต่ละจานมีความลงตัว รู้สึกได้ว่าใช้วัตถุดิบสดใหม่ทุกอย่าง
+                            บริการ: พนักงานบริการดีมาก ยิ้มแย้มตลอด ดูแลเอาใจใส่ลูกค้าทุกคนอย่างทั่วถึง
+                            ราคา: ราคาอาจจะอยู่ในระดับปานกลาง แต่คุ้มค่ากับคุณภาพและรสชาติอาหารที่ได้รับ เพราะรู้สึกว่าทุกจานทำมาอย่างดีจริงๆ</p>
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-3.jpg" style="width: 50px; height: 50px;">
+                            <div class="ps-3">
+                                <h5 class="mb-1">จิ๋กโก๋</h5>
+                                <small>สมชาย โชว์ฮา</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-transparent border rounded p-4">
+                        <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                        <p>ครั้งนี้ไปลองร้าน "อาหารอร่อยจัง" ที่เพื่อนบอกว่าอร่อยจนต้องไปลองเอง บอกเลยว่าไม่ผิดหวัง เพราะทุกคำที่กินเหมือนมีคนมาปรุงรสชาติในปากให้เอง! ไม่เชื่อลองดู!</p>
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-4.jpg" style="width: 50px; height: 50px;">
+                            <div class="ps-3">
+                                <h5 class="mb-1">ต๋อง</h5>
+                                <small>ประสิทธิ์ จัดเต็ม</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Testimonial End -->
+        
+
+        <!-- Footer Start -->
+        <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Company</h4>
+                        <a class="btn btn-link" href="">About Us</a>
+                        <a class="btn btn-link" href="">Contact Us</a>
+                        <a class="btn btn-link" href="">Reservation</a>
+                        <a class="btn btn-link" href="">Privacy Policy</a>
+                        <a class="btn btn-link" href="">Terms & Condition</a>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Contact</h4>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
+                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
+                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Opening</h4>
+                        <h5 class="text-light fw-normal">Monday - Saturday</h5>
+                        <p>09AM - 09PM</p>
+                        <h5 class="text-light fw-normal">Sunday</h5>
+                        <p>10AM - 08PM</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Newsletter</h4>
+                        <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                        <div class="position-relative mx-auto" style="max-width: 400px;">
+                            <input class="form-control border-primary w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                            <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                            &copy; <a class="border-bottom" href="#">Your Site Name</a>, All Right Reserved. 
+							
+							<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+							Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a><br><br>
+                            Distributed By <a class="border-bottom" href="https://themewagon.com" target="_blank">ThemeWagon</a>
+                        </div>
+                        <div class="col-md-6 text-center text-md-end">
+                            <div class="footer-menu">
+                                <a href="">Home</a>
+                                <a href="">Cookies</a>
+                                <a href="">Help</a>
+                                <a href="">FQAs</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
